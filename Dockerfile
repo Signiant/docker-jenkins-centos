@@ -36,7 +36,7 @@ RUN npm version && npm install -g npm@${NPM_VERSION} && npm version \
   && npm install -g bower grunt@0.4 grunt-cli grunt-connect-proxy@0.1.10 n phantomjs-prebuilt
 
 # Install the AWS CLI - used by some build processes
-RUN pip install awscli
+RUN pip install awscli maestroops slackclient
 
 RUN yum clean all
 
